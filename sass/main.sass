@@ -67,13 +67,22 @@ body
 	justify-content: space-between
 	&__item
 		display: block
+		position: relative
+		height: 75px
+		padding-top: 26px
+	&__active
+		.nav__link
+			border-color: #00961b
+			color: #00961b
 	&__link
 		color: #272727
 		font-size: 14px
-		line-height: 75px
+		border-bottom: 2px solid transparent
 		display: inline
+		padding: 6px 18px
 		&:hover
-			text-decoration: underline
+			border-color: #00961b
+			color: #00961b
 .slider
 	height: 570px
 	position: relative
@@ -140,7 +149,6 @@ body
 			background-color: #fff
 			color: #272727
 .s-form
-	background-color: #edf0e7
 	border-radius: 4px
 	display: block
 	padding: 48px 50px 52px 50px
@@ -149,6 +157,15 @@ body
 	right: 0
 	top: 50%
 	transform: translateY(-50%)
+	background: rgba(217,217,217,1)
+	background: -moz-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(255,255,255,0.9) 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(217,217,217,1)), color-stop(100%, rgba(255,255,255,0.9)))
+	background: -webkit-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(255,255,255,0.9) 100%)
+	background: -o-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(255,255,255,0.9) 100%)
+	background: -ms-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(255,255,255,0.9) 100%)
+	background: linear-gradient(to right, rgba(217,217,217,1) 0%, rgba(255,255,255,0.9) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#ffffff', GradientType=1 )
+
 	&__wp
 		height: 570px
 		position: relative
@@ -275,3 +292,49 @@ body
 		right: 0
 		top: 50%
 		transform: translateY(-50%)
+.path
+	background-color: #fff
+	padding: 4px 20px
+	border-radius: 5px
+	margin-bottom: 33px
+	&__item
+		display: inline-block
+		&::before
+			content: '/'
+			font-size: 12px
+			line-height: 22px
+			color: #999
+		&:first-child
+			&::before
+				display: none
+		span
+			&:hover
+				color: #999
+	&__link
+		font-size: 12px
+		line-height: 22px
+		color: #999
+		&:hover
+			color: #000
+.sidebar
+.price-list
+	padding-bottom: 17px
+	&__link
+		padding-left: 65px
+		display: block
+		width: 100%
+		background-color: #ebebeb
+		background-image: url(../img/icon/2.png)
+		background-repeat: no-repeat
+		background-position: 23px center
+		height: 75px
+		position: relative
+	&__text
+		position: absolute
+		left: 65px
+		top: 50%
+		transform: translateY(-50%)
+		display: block
+		color: #4c4c4c
+		font-family: "SFUIDisplayMedium", sans-serif
+		font-size: 17px
