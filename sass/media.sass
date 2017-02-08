@@ -12,6 +12,11 @@
 		padding-left: 32px
 	.nav__link
 		padding: 6px 9px
+		display: ruby
+	.s-form__description
+		text-align: center
+	.r-content__prod-item
+		width: 342px
 	/**/
 
 
@@ -36,6 +41,9 @@
 		padding: 16px 0
 		border-radius: 0 0 4px 4px
 		display: none
+		border-bottom: 1px solid #f7f7f7
+		border-left: 1px solid #f7f7f7
+		border-right: 1px solid #f7f7f7
 	.header__bottom
 		position: relative
 	.nav__item
@@ -58,6 +66,7 @@
 			left: 0
 			right: 0
 			top: 50%
+			-webkit-transform: translateY(-50%)
 			transform: translateY(-50%)
 			font-size: 24px
 			cursor: pointer
@@ -71,6 +80,7 @@
 		text-align: center
 	.s-form
 		position: static
+		-webkit-transform: none
 		transform: none
 		width: 60%
 		margin: 0 auto
@@ -89,10 +99,11 @@
 			float: left
 	.weAreWorking__description
 		position: static
+		-webkit-transform: none
 		transform: none
 	.weAreWorking__img
 		margin-right: 10px
-		margin-bottom: 10px
+		margin-bottom: 0
 		height: 198px
 		width: auto
 	.weAreWorking
@@ -135,6 +146,8 @@
 		display: block !important
 	.slider
 		display: none
+	.r-content__prod-item
+		width: 232px
 	/**/
 
 
@@ -153,6 +166,26 @@
 		float: none
 		width: 100%
 		line-height: 20px
+	.card__top-left
+		width: 100%
+		float: none
+	.card__top-right
+		padding-left: 0
+		padding-top: 16px
+		float: none
+	.r-content__prod-wp
+		margin-left: -1%
+	.r-content__prod-item
+		width: 49%
+		margin-left: 1%
+		margin-bottom: 1%
+	/**/
+
+@media only screen and (max-width : 650px)
+	.tabs__top-item
+		width: 100%
+		float: none
+		margin-right: 0
 	/**/
 
 @media only screen and (max-width : 620px)
@@ -176,6 +209,36 @@
 	.factoids__item
 		width: 100%
 		padding-bottom: 10px
+	.r-content__tab-top
+		.r-content__tab-item
+			&:nth-child(1)
+				width: 100%
+				&::after
+					display: none
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				display: none
+	.r-content__tab-row
+		.r-content__tab-item
+			&:nth-child(1)
+				width: 100%
+				a
+					left: 0
+					text-align: center
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				display: none
+	.contacts__wp .s-form__button
+		margin: 0
+		width: 100%
+	.contacts__map iframe
+		height: 320px
+	.contacts__item
+		width: 100%
+	.r-content__prod-item
+		width: 100%
 	/**/
 
 
