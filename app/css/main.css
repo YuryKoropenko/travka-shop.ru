@@ -92,13 +92,18 @@ body {
   display: block;
   float: left;
   text-align: left;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 35px;
 }
 
 .phone__item:last-child {
   text-align: right;
+}
+
+.phone__item p {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.5;
+  line-height: 35px;
 }
 
 .logo {
@@ -245,6 +250,11 @@ body {
 .slider__more:hover {
   background-color: #fff;
   color: #272727;
+}
+
+.slider__more:active, .slider__more:focus {
+  background-color: transparent;
+  color: #fff;
 }
 
 .s-form {
@@ -1188,4 +1198,8 @@ body {
 
 .r-content__tab-top-wp, .r-content__prod-wp {
   padding-top: 36px;
+}
+
+body .gm-style .place-card-large {
+  display: none !important;
 }

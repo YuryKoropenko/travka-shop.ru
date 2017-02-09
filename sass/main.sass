@@ -43,11 +43,14 @@ body
 		display: block
 		float: left
 		text-align: left
-		font-size: 13px
-		color: rgba(#fff,.5)
-		line-height: 35px
 		&:last-child
 			text-align: right
+		p
+			display: inline-block
+			font-size: 13px
+			color: #fff
+			opacity: 0.5
+			line-height: 35px
 .logo
 	height: 75px
 	padding-top: 15px
@@ -151,6 +154,9 @@ body
 		&:hover
 			background-color: #fff
 			color: #272727
+		&:active, &:focus
+			background-color: transparent
+			color: #fff
 .s-form
 	border-radius: 4px
 	display: block
@@ -839,3 +845,5 @@ body
 	display: none
 .r-content__tab-top-wp, .r-content__prod-wp
 	padding-top: 36px
+body .gm-style .place-card-large
+	display: none !important
