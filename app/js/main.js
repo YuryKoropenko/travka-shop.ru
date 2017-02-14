@@ -5,6 +5,12 @@ $(document).ready(function() {
 /*Выпадающее меню*/
 	$('.nav__popup .fa').on('click', function() {
 		$('.nav').slideToggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest(".nav").length) return;
+				$(".nav").fadeOut("slow");
+				event.stopPropagation();
+			});
+		return false
 	});
 
 /*карточка*/

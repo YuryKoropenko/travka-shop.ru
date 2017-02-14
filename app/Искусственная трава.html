@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/scrollpane/jquery.jscrollpane.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -24,6 +25,7 @@
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/scrollpane/jquery.jscrollpane.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -158,6 +160,11 @@
 									</span>
 								</div>
 							</div>
+							<script>
+								$(document).ready(function() {
+									$('.r-content__tab-top-wp').jScrollPane();
+								});
+							</script>
 							<div class="r-content__tab-top-wp">
 								<div class="r-content__tab-top">
 									<div class="r-content__tab-item">
@@ -172,6 +179,9 @@
 								</div>
 								<div class="r-content__tab-row">
 									<div class="r-content__tab-item">
+										<span>1)</span>
+									</div>
+									<div class="r-content__tab-item">
 										<a href="#">Искуственная трава Монофиламентная Ворс (40 ММ) BI-COLOr</a>
 									</div>
 									<div class="r-content__tab-item">
@@ -183,6 +193,9 @@
 								</div>
 								<div class="r-content__tab-row">
 									<div class="r-content__tab-item">
+										<span>2)</span>
+									</div>
+									<div class="r-content__tab-item">
 										<a href="#">Искуственная трава Монофиламентная Ворс (40 ММ) BI-COLOr</a>
 									</div>
 									<div class="r-content__tab-item">
@@ -194,6 +207,9 @@
 								</div>
 								<div class="r-content__tab-row">
 									<div class="r-content__tab-item">
+										<span>3)</span>
+									</div>
+									<div class="r-content__tab-item">
 										<a href="#">Искуственная трава Монофиламентная Ворс (40 ММ) BI-COLOr</a>
 									</div>
 									<div class="r-content__tab-item">
@@ -205,6 +221,9 @@
 								</div>
 								<div class="r-content__tab-row">
 									<div class="r-content__tab-item">
+										<span>4)</span>
+									</div>
+									<div class="r-content__tab-item">
 										<a href="#">Искуственная трава Монофиламентная Ворс (40 ММ) BI-COLOr</a>
 									</div>
 									<div class="r-content__tab-item">
@@ -214,6 +233,20 @@
 										<span>5 руб. за м.п.</span>
 									</div>
 								</div>
+							</div>
+							<div class="pagination-wp">
+								<ul class="pagination">
+									<li class="pagination__item pagination__active">
+										<a href="#" class="pagination__link">
+											1
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__link">
+											2
+										</a>
+									</li>
+								</ul>
 							</div>
 							<!--<div class="r-content__prod-wp">
 								<a href="#" class="r-content__prod-item">
@@ -290,7 +323,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-xs-6">
+				<div class="col-md-2 col-xs-6 col-sm-3">
 					<div class="footer__logo">
 						<div class="logo">
 							<a href="/" class="logo__link">
@@ -299,14 +332,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-1 col-xs-6">
+				<div class="col-lg-2 col-md-1 col-xs-6 col-sm-2">
 					<div class="footer__copy">
 						<div class="copy">
 							© 2006-2016
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-xs-6">
+				<div class="col-lg-3 col-md-4 col-xs-6 col-sm-5">
 					<div class="footer__phone">
 						<ul class="phone">
 							<li class="phone__item">
@@ -318,7 +351,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-2 col-xs-6">
+				<div class="col-md-2 col-xs-6 col-sm-2">
 					<div class="footer__other">
 						<ul class="other">
 							<li class="other__item">
@@ -334,7 +367,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-xs-12 col-sm-12">
 					<div class="footer__designed">
 						<div class="designed">
 							<a href="#">

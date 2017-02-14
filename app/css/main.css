@@ -46,6 +46,18 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+.jspVerticalBar {
+  display: none !important;
+}
+
+.jspPane {
+  width: 235px !important;
+}
+
+.r-content__tab-top-wp .r-content__tab-row:last-child {
+  margin-bottom: 16px;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -668,19 +680,31 @@ body {
 }
 
 .r-content__tab-item:nth-child(1) {
-  width: 64.22668%;
-  float: left;
-  text-align: left;
-}
-
-.r-content__tab-item:nth-child(2) {
-  width: 17.94569%;
+  width: 3.54191%;
   float: left;
   text-align: center;
 }
 
+.r-content__tab-item:nth-child(1) span {
+  line-height: 30px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.r-content__tab-item:nth-child(2) {
+  width: 61.03896%;
+  float: left;
+  text-align: left;
+}
+
 .r-content__tab-item:nth-child(3) {
-  width: 17.82763%;
+  width: 17.70956%;
+  float: left;
+  text-align: center;
+}
+
+.r-content__tab-item:nth-child(4) {
+  width: 17.70956%;
   float: left;
   text-align: center;
 }
